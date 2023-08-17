@@ -1,0 +1,37 @@
+@import "@styles/variables.scss";
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #065ebc;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 155%;
+}
+
+.botAvatar {
+  background-color: #007afe;
+
+  &::before {
+    content: "";
+
+    background: url("../../../../../../assets/images/botAvatar.svg") no-repeat
+      center center;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.userAvatar {
+  background-color: #d3e4fd;
+}

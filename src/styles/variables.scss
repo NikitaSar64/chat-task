@@ -1,0 +1,15 @@
+// fonts web
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;700&display=swap");
+
+// fonts import
+
+$sfpro-font-path: "./src/assets/fonts";
+
+@font-face {
+  src: url("#{$sfpro-font-path}/SFProDisplay-Regular.woff2") format("woff2"),
+    url("#{$sfpro-font-path}/SFProDisplay-Regular.woff") format("woff");
+
+  font-family: "SF Pro Text";
+  font-weight: 400;
+}
