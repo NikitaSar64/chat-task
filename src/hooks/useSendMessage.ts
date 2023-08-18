@@ -1,8 +1,9 @@
+import { useState } from "react";
+
 import { getMessageText } from "@helpers/getMessage";
 import { parseChunk } from "@helpers/parseChunk";
 import { IApiResponse, IMessage } from "@interfaces/interfaces";
 import { fetchMessage } from "@services/services";
-import { useState } from "react";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -51,6 +52,13 @@ export const useSendMessage = () => {
         });
       }
     } catch (error) {
+      setMessages((prevMessages) => {
+        const errorMessage: IMessage = {
+          sender: "bot",
+          textMessage: `Something went wrong (${error})`,
+        };
+        return [...prevMessages, errorMessage];
+      });
       setLoading(false);
     }
   };

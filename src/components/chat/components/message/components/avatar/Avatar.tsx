@@ -1,6 +1,8 @@
-import React, { FC } from "react";
-import styles from "./Avatar.module.scss";
+import { FC } from "react";
+
 import { IMessage } from "@interfaces/interfaces";
+
+import styles from "./Avatar.module.scss";
 import cn from "classnames";
 
 export const Avatar: FC<Pick<IMessage, "sender">> = ({ sender }) => {

@@ -1,8 +1,10 @@
 import { FC } from "react";
-import styles from "./Message.module.scss";
-import cn from "classnames";
+
 import { Avatar } from "./components/avatar/Avatar";
 import { MessageProps } from "./Message.props";
+
+import styles from "./Message.module.scss";
+import cn from "classnames";
 
 export const Message: FC<MessageProps> = ({
   textMessage,

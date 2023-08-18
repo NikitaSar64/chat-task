@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import styles from "./ChatTitle.module.scss";
 
 export const ChatTitle: FC<{ title: string; subTitle?: string }> = ({

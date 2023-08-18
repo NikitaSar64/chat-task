@@ -1,6 +1,8 @@
 import { FC } from "react";
-import styles from "./ChatInput.module.scss";
+
 import { ChatInputProps } from "./ChatInput.props";
+
+import styles from "./ChatInput.module.scss";
 
 export const ChatInput: FC<ChatInputProps> = ({ onSubmit, inputRef }) => {
   return (

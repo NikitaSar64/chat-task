@@ -1,10 +1,13 @@
 import { FC, FormEvent, HTMLAttributes, useEffect, useRef } from "react";
-import styles from "./Chat.module.scss";
+
 import { ChatTitle } from "./components/chattitle/ChatTitle";
-import cn from "classnames";
 import { ChatList } from "./components/chatlist/ChatList";
 import { ChatInput } from "./components/chatinput/ChatInput";
+
 import { useSendMessage } from "@hooks/useSendMessage";
+
+import styles from "./Chat.module.scss";
+import cn from "classnames";
 
 export const Chat: FC<HTMLAttributes<HTMLElement>> = ({ className }) => {
   const { loading, sendMessage, messages, setMessages } = useSendMessage();

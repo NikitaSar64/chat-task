@@ -1,7 +1,9 @@
 import { FC, useEffect, useRef } from "react";
-import styles from "./ChatList.module.scss";
+
 import { Message } from "../message/Message";
 import { IMessage } from "@interfaces/interfaces";
+
+import styles from "./ChatList.module.scss";
 
 export const ChatList: FC<{ messages: IMessage[] }> = ({ messages }) => {
   const messagesEndRef = useRef<null | HTMLDivElement>(null);
