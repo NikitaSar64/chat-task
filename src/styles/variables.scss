@@ -4,7 +4,7 @@
 
 // fonts import
 
-$sfpro-font-path: "./src/assets/fonts";
+$sfpro-font-path: "fonts";
 
 @font-face {
   src: url("#{$sfpro-font-path}/SFProDisplay-Regular.woff2") format("woff2"),
